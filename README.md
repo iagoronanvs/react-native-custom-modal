@@ -1,5 +1,4 @@
 ![](https://img.shields.io/npm/v/react-native-irvs-modal.svg?style=flat)
-![](https://img.shields.io/npm/dt/react-native-irvs-modal.svg)
 
 # react-native-custom-modal
 
