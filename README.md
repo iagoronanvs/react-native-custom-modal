@@ -4,7 +4,9 @@
 
 A simple and fully customizable React Native component that implements a modal. 
 
-![](src/assets/examples/success.png)
+Success                    | Error                     | Warning
+:-------------------------:|:-------------------------:|:-------------------------:|
+![](src/assets/examples/success.png) | ![](src/assets/examples/error.png) | ![](src/assets/examples/warning.png)
 
 ## Installation
 
