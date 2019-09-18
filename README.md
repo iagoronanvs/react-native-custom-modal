@@ -4,6 +4,8 @@
 
 A simple and fully customizable React Native component that implements a modal. 
 
+![](https://drive.google.com/open?id=1GhCrWimdXye6csyLHF-2ArrYQ71tTa3X)
+
 ## Installation
 
 If using yarn:
