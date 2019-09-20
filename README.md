@@ -25,29 +25,29 @@ npm i react-native-irvs-modal
 ## Usage
 
 ```
-import React, { Component } from 'react';
-import { Modal } from 'react-native-irvs-modal';
+import React, { useState, useEffect } from 'react';
+import Modal from 'react-native-irvs-modal';
 
-class ExampleScreen extends Component {
+function ExampleScreen(){
     
-    constructor(props) {
-        super(props);
-        this.state = {
-            isVisible: true
-        }
-    }
+    const [visible, setVisible] = useState(false);
 
-    render() {
-        return (
-            <Modal
-                visible={this.state.isVisible} 
-                type="success"
-                title="Success!"
-                message="Modal was rendered."
-                confirmButtonAction={() => { this.setState({isVisible:false}) }}
-            />
-        )
-    }
+    useEffect(() => {
+        setTimeout(() => {
+            setVisible(true);
+        }, 5000);
+    }, [])
+
+    return (
+        <Modal
+            visible={visible} 
+            type="success"
+            title="Success!"
+            message="Modal was rendered."
+            confirmButtonAction={() => { setVisible(false) }}
+        />
+    )
+    
 }
 
 export default ExampleScreen;
